@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+/* Prevent horizontal scroll from full-bleed hero backgrounds */
+html, body, #root {
+  overflow-x: hidden;
+}
+
+#root {
+  max-width: -webkit-fill-available;
+}
