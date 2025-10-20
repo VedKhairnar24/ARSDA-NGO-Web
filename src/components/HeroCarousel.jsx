@@ -78,38 +78,38 @@ export default function HeroCarousel() {
       
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="max-w-4xl mx-auto px-6 text-center lg:text-left">
-          <div className="max-w-2xl">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center lg:text-left">
+          <div className="max-w-4xl lg:max-w-2xl">
             <div key={currentSlide} className="transition-all duration-1000 ease-in-out transform">
-              <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in-up">
                 {slides[currentSlide].title}
               </h1>
-              <h2 className="text-2xl lg:text-3xl font-light text-teal-100 mb-4 animate-fade-in-up animation-delay-200">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-teal-100 mb-3 sm:mb-4 animate-fade-in-up animation-delay-200">
                 {slides[currentSlide].subtitle}
               </h2>
-              <p className="text-lg lg:text-xl text-teal-50 mb-8 leading-relaxed animate-fade-in-up animation-delay-400">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-teal-50 mb-6 sm:mb-8 leading-relaxed animate-fade-in-up animation-delay-400">
                 {slides[currentSlide].description}
               </p>
             </div>
             
             {/* Main Slogan */}
-            <div key={`slogan-${currentSlide}`} className="mb-8 animate-fade-in-up animation-delay-600">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white bg-teal-600/90 px-6 py-3 rounded-lg inline-block shadow-lg hover-lift">
+            <div key={`slogan-${currentSlide}`} className="mb-6 sm:mb-8 animate-fade-in-up animation-delay-600">
+              <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-white bg-teal-600/90 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-lg inline-block shadow-lg hover-lift">
                 "GET EDUCATED, BE UNITED AND GAIN PROSPERITY"
               </h3>
             </div>
             
             {/* Action Buttons */}
-            <div key={`buttons-${currentSlide}`} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-800">
+            <div key={`buttons-${currentSlide}`} className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-800">
               <a 
                 href="/join-us" 
-                className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500 ease-out hover-lift"
+                className="bg-teal-600 hover:bg-teal-700 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500 ease-out hover-lift"
               >
                 Join Our Mission
               </a>
               <a 
                 href="/volunteer" 
-                className="border-2 border-white text-white hover:bg-white hover:text-teal-600 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500 ease-out hover-lift"
+                className="border-2 border-white text-white hover:bg-white hover:text-teal-600 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500 ease-out hover-lift"
               >
                 Become a Volunteer
               </a>
@@ -121,31 +121,31 @@ export default function HeroCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-500 ease-out hover:scale-110 backdrop-blur-sm"
+        className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-2 sm:p-3 rounded-full transition-all duration-500 ease-out hover:scale-110 backdrop-blur-sm"
         aria-label="Previous slide"
       >
-        <svg className="w-6 h-6 transition-transform duration-300 hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
       
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all duration-500 ease-out hover:scale-110 backdrop-blur-sm"
+        className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-2 sm:p-3 rounded-full transition-all duration-500 ease-out hover:scale-110 backdrop-blur-sm"
         aria-label="Next slide"
       >
-        <svg className="w-6 h-6 transition-transform duration-300 hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2 sm:space-x-3">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-500 ease-out transform hover:scale-125 ${
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-500 ease-out transform hover:scale-125 ${
               index === currentSlide 
                 ? 'bg-white scale-125 shadow-lg' 
                 : 'bg-white/50 hover:bg-white/75 hover:scale-110'
@@ -156,9 +156,10 @@ export default function HeroCarousel() {
       </div>
 
       {/* Organization Name */}
-      <div className="absolute top-8 left-8 z-20">
-        <h4 className="text-white text-lg font-semibold bg-teal-600/80 px-4 py-2 rounded-lg">
-          All Round Social Development Association (Regd.), Delhi
+      <div className="absolute top-4 sm:top-8 left-4 sm:left-8 z-20">
+        <h4 className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold bg-teal-600/80 px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg">
+          <span className="hidden sm:inline">All Round Social Development Association (Regd.), Delhi</span>
+          <span className="sm:hidden">ARSDA (Regd.), Delhi</span>
         </h4>
       </div>
     </section>

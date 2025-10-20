@@ -10,13 +10,13 @@ const services = [
 
 export default function Services(){
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-2xl font-light text-gray-900 mb-8 text-center">Our Services</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section className="py-8 sm:py-16 bg-gray-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 className="text-xl sm:text-2xl font-light text-gray-900 mb-6 sm:mb-8 text-center">Our Services</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {services.map((service, idx)=> (
-            <div key={service} className={`text-center p-5 rounded-lg border border-gray-200 bg-white hover-lift ${idx%3===1?'animation-delay-200':''} ${idx%3===2?'animation-delay-400':''} animate-fade-in-up`}>
-              <p className="text-gray-800">{service}</p>
+            <div key={service} className={`text-center p-3 sm:p-5 rounded-lg border border-gray-200 bg-white hover-lift ${idx%3===1?'animation-delay-200':''} ${idx%3===2?'animation-delay-400':''} animate-fade-in-up`}>
+              <p className="text-xs sm:text-sm text-gray-800">{service}</p>
             </div>
           ))}
         </div>

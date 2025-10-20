@@ -95,3 +95,30 @@
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+
+/* Mobile-first responsive improvements */
+@media (max-width: 640px) {
+  .hover-lift:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* Ensure touch targets are at least 44px */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better text scaling on mobile */
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
+/* Tablet and desktop hover effects */
+@media (min-width: 641px) {
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+}
