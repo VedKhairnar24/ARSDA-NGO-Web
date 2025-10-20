@@ -2,7 +2,10 @@ export default function About(){
   return (
     <div className="py-16">
       <div className="max-w-4xl mx-auto px-6">
-        <h1 className="text-3xl font-light text-gray-900 mb-8">About Us</h1>
+        <h1 className="text-3xl font-light text-gray-900 mb-4 text-center">About Us</h1>
+        <div className="flex justify-center mb-8">
+          <img src="../images/ARSDA-logo.png" alt="ARSDA Logo" className="h-40 w-auto animate-scale-in" />
+        </div>
 
         {/* Establishment & History */}
         <section className="space-y-4 mb-10">

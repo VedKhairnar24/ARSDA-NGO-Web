@@ -1,7 +1,7 @@
 export default function Contact(){
   return (
     <div className="py-16">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6 animate-fade-in-up">
         <h1 className="text-3xl font-light text-gray-900 mb-8">Contact Us</h1>
         <div className="space-y-10">
           <section>
@@ -22,7 +22,7 @@ export default function Contact(){
 
           <section>
             <h2 className="text-xl font-light text-gray-900 mb-4">Location Map</h2>
-            <div className="aspect-video w-full overflow-hidden rounded-lg border border-gray-200">
+            <div className="aspect-video w-full overflow-hidden rounded-lg border border-gray-200 hover-lift">
               <iframe
                 title="ARSDA Location"
                 src={"https://www.google.com/maps?q=" + encodeURIComponent("B-266, Gali No. 2, Rajveer Colony, Gharoli Extension, Delhi – 110096") + "&output=embed"}

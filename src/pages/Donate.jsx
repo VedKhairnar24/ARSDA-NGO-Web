@@ -1,7 +1,7 @@
 export default function Donate(){
   return (
     <div className="py-16">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+      <div className="max-w-4xl mx-auto px-6 text-center animate-fade-in-up">
         <h1 className="text-3xl font-light text-gray-900 mb-8">Support Our Mission</h1>
 
         {/* Appeal */}
@@ -11,7 +11,7 @@ export default function Donate(){
         </p>
 
         {/* Funding Utilization */}
-        <div className="border border-gray-200 rounded p-6 text-left max-w-3xl mx-auto mb-8 bg-white">
+        <div className="border border-gray-200 rounded p-6 text-left max-w-3xl mx-auto mb-8 bg-white hover-lift">
           <h2 className="text-lg font-medium text-gray-900 mb-2">How Your Contribution Helps</h2>
           <p className="text-gray-700">
             Donations support the expansion of efforts in education and community development,
@@ -21,15 +21,15 @@ export default function Donate(){
 
         {/* Contribution Options */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
-          <div className="border border-gray-200 rounded p-6 bg-white">
+          <div className="border border-gray-200 rounded p-6 bg-white hover-lift">
             <h3 className="text-lg font-medium text-gray-900 mb-1">General Donations</h3>
             <p className="text-sm text-gray-600">As per individual capacity</p>
           </div>
-          <div className="border border-gray-200 rounded p-6 bg-white">
+          <div className="border border-gray-200 rounded p-6 bg-white hover-lift animation-delay-200 animate-fade-in-up">
             <h3 className="text-lg font-medium text-gray-900 mb-1">General Membership Fees</h3>
             <div className="text-2xl font-light text-teal-600">₹100</div>
           </div>
-          <div className="border border-gray-200 rounded p-6 bg-white">
+          <div className="border border-gray-200 rounded p-6 bg-white hover-lift animation-delay-400 animate-fade-in-up">
             <h3 className="text-lg font-medium text-gray-900 mb-1">Lifetime Membership Fees</h3>
             <div className="text-2xl font-light text-teal-600">₹2000</div>
           </div>
@@ -43,7 +43,7 @@ export default function Donate(){
 
         {/* Payment Gateway Placeholder */}
         <div className="max-w-md mx-auto">
-          <button className="w-full bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 text-sm rounded">
+          <button className="w-full bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 text-sm rounded hover-lift">
             Donate / Become a Member
           </button>
           <p className="text-xs text-gray-500 mt-2">Secure payment gateway integration coming here.</p>
