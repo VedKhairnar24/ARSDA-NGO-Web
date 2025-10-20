@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-2" aria-label="ARSDA Home">
-            <img src="/img/ARSDA-logo.png" alt="ARSDA logo" className="h-8 w-auto" />
+            <img src="/images/ARSDA-logo.png" alt="ARSDA logo" className="h-8 w-auto" />
             <span className="text-lg font-semibold text-gray-900">ARSDA</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">

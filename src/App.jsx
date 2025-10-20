@@ -11,6 +11,7 @@ import News from './pages/News.jsx'
 import Contact from './pages/Contact.jsx'
 import Volunteer from './pages/Volunteer.jsx'
 import Donate from './pages/Donate.jsx'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <SpeedInsights />
     </div>
   )
 }
