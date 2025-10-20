@@ -6,7 +6,10 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="text-lg font-medium text-gray-900">ARSDA</Link>
+          <Link to="/" className="flex items-center gap-2" aria-label="ARSDA Home">
+            <img src="/ARSDA-logo.png" alt="ARSDA logo" className="h-8 w-auto" />
+            <span className="text-lg font-semibold text-gray-900">ARSDA</span>
+          </Link>
           <nav className="hidden md:flex items-center space-x-8">
             <NavLink to="/" className={({isActive})=>`text-sm ${isActive?'text-teal-600':'text-gray-600 hover:text-gray-900'}`}>Home</NavLink>
             <NavLink to="/about" className="text-sm text-gray-600 hover:text-gray-900">About</NavLink>
