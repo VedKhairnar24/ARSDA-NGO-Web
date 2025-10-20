@@ -23,8 +23,8 @@ export default function Impact(){
               government hospitals.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-4">
-              <img src="/img/IMG-20251015-WA0059.jpg" alt="Blood donation camp" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200 hover-lift" />
-              <img src="/img/IMG-20251015-WA0060.jpg" alt="Medical camp" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200 hover-lift" />
+              <img src="../images/volunteer.jpg" alt="Blood donation camp" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200 hover-lift" />
+              <img src="../images/eye-checkup.jpg" alt="Medical camp" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200 hover-lift" />
             </div>
           </section>
 
