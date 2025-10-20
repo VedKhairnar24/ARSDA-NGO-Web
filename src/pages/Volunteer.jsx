@@ -4,8 +4,8 @@ export default function Volunteer(){
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h1 className="text-2xl sm:text-3xl font-light text-gray-900 mb-6 sm:mb-8">Volunteer with Us</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
-          <img src="/img/IMG-20251015-WA0059.jpg" alt="Volunteers at blood donation camp" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200" />
-          <img src="../images/Yoga program.jpg" alt="Volunteers at yoga program" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200" />
+          <img src="../images/volunteer.jpg" alt="Volunteers at blood donation camp" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200" />
+          <img src="../images/Yoga_program.jpg" alt="Volunteers at Yoga_program" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200" />
         </div>
         <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6 sm:mb-8">
           We encourage youth volunteerism to bring new energy into our activities. Contribute to

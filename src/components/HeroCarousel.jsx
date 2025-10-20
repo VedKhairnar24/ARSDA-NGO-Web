@@ -6,7 +6,7 @@ export default function HeroCarousel() {
   const slides = [
     {
       id: 1,
-      image: '../images/community.jpg',
+      image: './images/Yoga_program.jpg',
       title: 'Quality Education for All',
       subtitle: 'Empowering minds, building futures',
       description: 'Optimising Employment Opportunity through Quality Education'
@@ -74,7 +74,7 @@ export default function HeroCarousel() {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-teal-700/80 via-teal-600/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#2980B9]/80 via-[#2980B9]/60 to-transparent" />
       
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
@@ -84,34 +84,28 @@ export default function HeroCarousel() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in-up">
                 {slides[currentSlide].title}
               </h1>
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-teal-100 mb-3 sm:mb-4 animate-fade-in-up animation-delay-200">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-blue-100 mb-3 sm:mb-4 animate-fade-in-up animation-delay-200">
                 {slides[currentSlide].subtitle}
               </h2>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-teal-50 mb-6 sm:mb-8 leading-relaxed animate-fade-in-up animation-delay-400">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-blue-50 mb-6 sm:mb-8 leading-relaxed animate-fade-in-up animation-delay-400">
                 {slides[currentSlide].description}
               </p>
             </div>
             
             {/* Main Slogan */}
             <div key={`slogan-${currentSlide}`} className="mb-6 sm:mb-8 animate-fade-in-up animation-delay-600">
-              <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-white bg-teal-600/90 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-lg inline-block shadow-lg hover-lift">
+              <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-white bg-[#2980B9]/90 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-lg inline-block shadow-lg hover-lift">
                 "GET EDUCATED, BE UNITED AND GAIN PROSPERITY"
               </h3>
             </div>
             
-            {/* Action Buttons */}
-            <div key={`buttons-${currentSlide}`} className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-800">
+            {/* Action Button */}
+            <div key={`button-${currentSlide}`} className="flex justify-center lg:justify-start animate-fade-in-up animation-delay-800">
               <a 
                 href="/join-us" 
-                className="bg-teal-600 hover:bg-teal-700 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500 ease-out hover-lift"
+                className="bg-[#C0392B] hover:bg-[#A93226] text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-sm sm:text-base md:text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500 ease-out hover-lift"
               >
                 Join Our Mission
-              </a>
-              <a 
-                href="/volunteer" 
-                className="border-2 border-white text-white hover:bg-white hover:text-teal-600 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500 ease-out hover-lift"
-              >
-                Become a Volunteer
               </a>
             </div>
           </div>
@@ -140,15 +134,15 @@ export default function HeroCarousel() {
       </button>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2 sm:space-x-3">
+      <div className="absolute bottom-3 sm:bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-1 sm:space-x-1.5">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-500 ease-out transform hover:scale-125 ${
+            className={`w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ease-out transform hover:scale-125 ${
               index === currentSlide 
-                ? 'bg-white scale-125 shadow-lg' 
-                : 'bg-white/50 hover:bg-white/75 hover:scale-110'
+                ? 'bg-white scale-110 shadow-sm' 
+                : 'bg-white/50 hover:bg-white/70 hover:scale-110'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
@@ -157,7 +151,7 @@ export default function HeroCarousel() {
 
       {/* Organization Name */}
       <div className="absolute top-4 sm:top-8 left-4 sm:left-8 z-20">
-        <h4 className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold bg-teal-600/80 px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg">
+        <h4 className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold bg-[#2980B9]/80 px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg">
           <span className="hidden sm:inline">All Round Social Development Association (Regd.), Delhi</span>
           <span className="sm:hidden">ARSDA (Regd.), Delhi</span>
         </h4>
@@ -165,5 +159,4 @@ export default function HeroCarousel() {
     </section>
   )
 }
-
 

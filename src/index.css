@@ -122,3 +122,27 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   }
 }
+
+/* Ultra-compact slide indicators for mobile */
+.slide-indicator {
+  min-width: 16px;
+  min-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .slide-indicator {
+    min-width: 12px;
+    min-height: 12px;
+  }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
+  .slide-indicator {
+    min-width: 10px;
+    min-height: 10px;
+  }
+}

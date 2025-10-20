@@ -32,7 +32,7 @@ export default function News(){
                 <h3 className="text-sm sm:text-base font-medium text-gray-900">Blog: Educational, Professional, Financial Counselling</h3>
                 <p className="text-xs sm:text-sm text-gray-500">Ongoing</p>
                 <p className="text-xs sm:text-sm text-gray-700 mt-1">Use the blog to publish articles offering guidance and counselling for youth.</p>
-                <img src="../images/Yoga program.jpg" alt="Yoga program" className="mt-3 w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200" />
+                <img src="../images/Yoga_program.jpg" alt="Yoga_program" className="mt-3 w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200" />
               </article>
             </div>
           </section>

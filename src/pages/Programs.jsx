@@ -45,7 +45,7 @@ export default function Programs(){
               <li>A Qualitative Polytechnic and a Degree College in each Panchayat and Council</li>
             </ul>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-4">
-              <img src="../images/Yoga program.jpg" alt="Yoga program" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200 hover-lift" />
+              <img src="../images/Yoga_program.jpg" alt="Yoga_program" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200 hover-lift" />
               <img src="../images/helth check.jpg" alt="Community program" className="w-full h-40 sm:h-56 object-cover rounded-lg border border-gray-200 hover-lift" />
             </div>
           </section>
