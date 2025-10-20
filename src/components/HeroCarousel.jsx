@@ -72,7 +72,7 @@ export default function HeroCarousel() {
           </div>
         ))}
       </div>
-public/ARSDA-logo.png
+
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-teal-700/80 via-teal-600/60 to-transparent" />
       
