@@ -6,21 +6,21 @@ export default function HeroCarousel() {
   const slides = [
     {
       id: 1,
-      image: 'public/community.jpg',
+      image: 'public/img/community.jpg',
       title: 'Quality Education for All',
       subtitle: 'Empowering minds, building futures',
       description: 'Optimising Employment Opportunity through Quality Education'
     },
     {
       id: 2,
-      image: 'public/education.jpg',
+      image: 'public/img/education.jpg',
       title: 'Building Strong Communities',
       subtitle: 'United we grow, together we prosper',
       description: 'Creating opportunities for social development and community growth'
     },
     {
       id: 3,
-        image: 'public/president.jpg',
+        image: 'public/img/president.jpg',
       title: 'Path to Prosperity',
       subtitle: 'Education leads to success',
       description: 'Transforming lives through education and employment opportunities'
