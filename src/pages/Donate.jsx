@@ -3,23 +3,51 @@ export default function Donate(){
     <div className="py-16">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-3xl font-light text-gray-900 mb-8">Support Our Mission</h1>
-        <p className="text-gray-600 leading-relaxed mb-8">
-          Your contribution helps us provide quality education to those who need it most. 
-          Every donation makes a difference in someone's life.
+
+        {/* Appeal */}
+        <p className="text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
+          As our President warmly invites you, join our noble mission to create a better future.
+          Your generosity fuels education, healthcare, and opportunity for those who need it most.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-8">
-          <div className="border border-gray-200 rounded p-6">
-            <h3 className="text-lg font-medium text-gray-900 mb-2">General Membership</h3>
-            <div className="text-2xl font-light text-teal-600 mb-2">₹100</div>
-            <p className="text-sm text-gray-600">Annual membership</p>
+
+        {/* Funding Utilization */}
+        <div className="border border-gray-200 rounded p-6 text-left max-w-3xl mx-auto mb-8 bg-white">
+          <h2 className="text-lg font-medium text-gray-900 mb-2">How Your Contribution Helps</h2>
+          <p className="text-gray-700">
+            Donations support the expansion of efforts in education and community development,
+            including providing scholarships and conducting medical camps.
+          </p>
+        </div>
+
+        {/* Contribution Options */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+          <div className="border border-gray-200 rounded p-6 bg-white">
+            <h3 className="text-lg font-medium text-gray-900 mb-1">General Donations</h3>
+            <p className="text-sm text-gray-600">As per individual capacity</p>
           </div>
-          <div className="border border-gray-200 rounded p-6">
-            <h3 className="text-lg font-medium text-gray-900 mb-2">Lifetime Membership</h3>
-            <div className="text-2xl font-light text-teal-600 mb-2">₹2000</div>
-            <p className="text-sm text-gray-600">One-time payment</p>
+          <div className="border border-gray-200 rounded p-6 bg-white">
+            <h3 className="text-lg font-medium text-gray-900 mb-1">General Membership Fees</h3>
+            <div className="text-2xl font-light text-teal-600">₹100</div>
+          </div>
+          <div className="border border-gray-200 rounded p-6 bg-white">
+            <h3 className="text-lg font-medium text-gray-900 mb-1">Lifetime Membership Fees</h3>
+            <div className="text-2xl font-light text-teal-600">₹2000</div>
           </div>
         </div>
-        <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 text-sm rounded">Donate Now</button>
+
+        {/* CSR & Govt Funding */}
+        <p className="text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
+          We welcome Corporate Social Responsibility (CSR) and Government Funding for our
+          "Quality Education for All" initiatives.
+        </p>
+
+        {/* Payment Gateway Placeholder */}
+        <div className="max-w-md mx-auto">
+          <button className="w-full bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 text-sm rounded">
+            Donate / Become a Member
+          </button>
+          <p className="text-xs text-gray-500 mt-2">Secure payment gateway integration coming here.</p>
+        </div>
       </div>
     </div>
   )

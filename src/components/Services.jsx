@@ -1,8 +1,11 @@
 const services = [
   'Career Guidance',
-  'Personality Development',
-  'Motivation',
-  'Time Management',
+  'Soft Skills Training',
+  'Self-Study Skills Training',
+  'Personality Development Training',
+  'Time Management Training',
+  'Motivational Sessions',
+  'Blending Career with Capabilities Training',
 ]
 
 export default function Services(){

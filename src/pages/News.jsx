@@ -3,25 +3,37 @@ export default function News(){
     <div className="py-16">
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-3xl font-light text-gray-900 mb-8">News & Updates</h1>
-        <div className="space-y-8">
-          <div className="border-b border-gray-200 pb-6">
-            <h2 className="text-xl font-light text-gray-900 mb-2">Latest Updates</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Stay updated with our latest programs, events, and success stories.
-            </p>
-          </div>
-          <div className="space-y-4">
-            <div className="border-l-4 border-teal-600 pl-4">
-              <h3 className="font-medium text-gray-900">New Educational Program Launched</h3>
-              <p className="text-sm text-gray-500">March 2024</p>
-              <p className="text-gray-600 text-sm mt-1">We have launched a new skill development program for underprivileged youth.</p>
+        <div className="space-y-10">
+          <section>
+            <h2 className="text-xl font-light text-gray-900 mb-2">Current Status</h2>
+            <p className="text-gray-600">News & Updates and Articles/Blogs are currently under development.</p>
+          </section>
+
+          <section className="space-y-6">
+            <h2 className="text-xl font-light text-gray-900">Recommended Updates</h2>
+            <div className="space-y-4">
+              <article className="border-l-4 border-teal-600 pl-4">
+                <h3 className="font-medium text-gray-900">Scholarship Funds Quadrupled</h3>
+                <p className="text-sm text-gray-500">To be published</p>
+                <p className="text-gray-700 text-sm mt-1">Publish an article detailing the recent quadrupling of scholarship funds and its impact.</p>
+              </article>
+              <article className="border-l-4 border-teal-600 pl-4">
+                <h3 className="font-medium text-gray-900">Medical Camps Report</h3>
+                <p className="text-sm text-gray-500">To be published</p>
+                <p className="text-gray-700 text-sm mt-1">Share reports with photos/videos on recent health camps, including eye check-ups and cataract referrals.</p>
+              </article>
+              <article className="border-l-4 border-teal-600 pl-4">
+                <h3 className="font-medium text-gray-900">Upcoming Awareness Programs</h3>
+                <p className="text-sm text-gray-500">To be announced</p>
+                <p className="text-gray-700 text-sm mt-1">Announce sessions on "Quality Education, Employment & Prosperity".</p>
+              </article>
+              <article className="border-l-4 border-teal-600 pl-4">
+                <h3 className="font-medium text-gray-900">Blog: Educational, Professional, Financial Counselling</h3>
+                <p className="text-sm text-gray-500">Ongoing</p>
+                <p className="text-gray-700 text-sm mt-1">Use the blog to publish articles offering guidance and counselling for youth.</p>
+              </article>
             </div>
-            <div className="border-l-4 border-teal-600 pl-4">
-              <h3 className="font-medium text-gray-900">Community Awareness Drive</h3>
-              <p className="text-sm text-gray-500">February 2024</p>
-              <p className="text-gray-600 text-sm mt-1">Successfully conducted awareness programs in 5 communities across Delhi.</p>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
